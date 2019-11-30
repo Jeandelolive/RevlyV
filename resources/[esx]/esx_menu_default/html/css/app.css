@@ -1,0 +1,100 @@
+@font-face {
+  font-family: bankgothic;
+  src: url('../fonts/bankgothic.ttf');
+}
+
+@font-face {
+  font-family: pcdown;
+  src: url('../fonts/pdown.ttf');
+}
+
+.menu {
+  font-family   : 'Open Sans', sans-serif;
+  min-width     : 350px;
+  color         : #fff;
+  position      : absolute;
+  border-radius : 5px;
+  overflow      : hidden;
+}
+
+.menu.align-left {
+  left: 40;
+  top : 50%;
+  transform: translate(0, -50%); 
+}
+
+.menu.align-top-left {
+  left: 20;
+  top : 200; 
+}
+
+.menu.align-top {
+  left: 50%;
+  top : 40;
+  transform: translate(-50%, 0); 
+}
+
+.menu.align-top-right {
+  right: 10;
+  top  : 40;
+}
+
+.menu.align-right {
+  right: 40;
+  top  : 50%;
+  transform: translate(0, -50%); 
+}
+
+.menu.align-bottom-right {
+  right : 40;
+  bottom: 40;
+}
+
+.menu.align-bottom {
+  left  : 50%;
+  bottom: 40;
+  transform: translate(-50%, 0); 
+}
+
+.menu.align-bottom-left {
+  left  : 40;
+  bottom: 40;
+}
+
+.menu.align-center {
+  left : 50%;
+  top  : 50%;
+  transform: translate(-50%, -50%); 
+}
+
+.menu .head {
+  font-family     : pcdown;
+  text-align      : center;
+  height          : 65px;
+  line-height     : 65px;
+  font-size       : 30px;
+  padding         : 5px 0;
+  background-image:url(https://i.imgur.com/7p99Km6.png)
+}
+
+.menu .menu-items {
+  max-height       : 500px;
+  overflow-y       : auto;
+  background-color : rgba(0, 0, 0, 0.5);
+  width            : calc(100% + 20px);
+}
+
+.menu .menu-items .menu-item {
+  display         : block;
+  font-size       : 18px;
+  font-weight     : 100;
+  color           : white;
+  text-align      : left;
+  border-left     : 10px solid transparent;
+  padding         : 8px 20px 8px 0;
+  transition      : padding 0.25s ease;
+}
+
+.menu .menu-items .menu-item.selected {
+ background-color: #848484;
+}
